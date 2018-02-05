@@ -10,6 +10,26 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Vollkorn|Fondamento|UnifrakturMaguntia" rel="stylesheet">
 
+        <!-- Sticky footer -->
+        <style>
+            html {
+              position: relative;
+              min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+            .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                /* Set the fixed height of the footer here */
+                height: 60px;
+                color:#F5F5F5
+            }
+        </style>
+
         <title>Template Character Sheet</title>
     </head>
 
@@ -31,7 +51,7 @@
                             <h2>Special Ability</h2>
                         </div>
                         <div class="col-md-6" style="text-align:left">
-                            <h2><strong>Template Power</strong></h2>
+                            <h2>Template Power</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -122,7 +142,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4" style="font-family:Fondamento; text-align:right">
-                            <strong>Number is greater than your current character level</strong>
+                            <h4>Number is greater than your current character level</h4>
                         </div>
                         <div class="col-md-8">
                             <p>
@@ -200,8 +220,10 @@
             </div>
         </div>
 
-        <footer class="container-fluid" style="color:lightgray">
-            <p>https://brianshef.github.io/pubquest/</p>
+        <footer class="footer">
+            <div class="container-fluid">
+                <p class="text-center">brianshef.github.io/pubquest</p>
+            </div>
         </footer>
 
         <!-- Bootstrap core JavaScript
