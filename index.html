@@ -5,6 +5,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- Sticky Footer -->
+        <style>
+            body {
+              margin-bottom: 60px; /* Margin bottom by footer height */
+            }
+            .footer {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 60px; /* Set the fixed height of the footer here */
+              line-height: 60px; /* Vertically center the text there */
+              background-color: #f5f5f5;
+            }
+        </style>
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Fonts -->
@@ -89,6 +104,15 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Characters -->
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+
+
                 <div class="row" style="text-align:center">
                     <div class="col-md-12">
                         <hr >
@@ -102,51 +126,68 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <h2 style="font-family:Fondamento">Warrior</h2>
-                        <p>
-                            Mighty and courageous, no adventuring party is complete without a Warrior or two.
-                            Warriors use the <strong>Power Attack</strong> special ability,
-                            which allows them to gain levels rapidly.
-                        </p>
-                        <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/warrior" role="button">Get the Warrior character sheet</a></p>
+                        <div class="card text-center">
+                            <h2 style="font-family:Fondamento" class="card-header">Warrior</h2>
+                            <div class="card-block">
+                                <p class="card-text">
+                                    Mighty and courageous, no adventuring party is complete without a Warrior or two.
+                                    Warriors use the <strong>Power Attack</strong> special ability,
+                                    which allows them to gain levels rapidly.
+                                </p>
+                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/warrior" role="button">Get the Warrior character sheet</a></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <h2 style="font-family:Fondamento">Thief</h2>
-                        <p>
-                            Swift and sneaky, the Thief is a vital but dangerous companion.
-                            Thieves use the <strong>Backstab</strong> special ability,
-                            allowing them to steal levels from other characters.
-                        </p>
-                        <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/thief" role="button">Get the Thief character sheet</a></p>
+                        <div class="card text-center">
+                            <h2 style="font-family:Fondamento" class="card-header">Thief</h2>
+                            <div class="card-block">
+                                <p class="card-text">
+                                    Swift and sneaky, the Thief is a vital but dangerous companion.
+                                    Thieves use the <strong>Backstab</strong> special ability,
+                                    allowing them to steal levels from other characters.
+                                </p>
+                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/thief" role="button">Get the Thief character sheet</a></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <h2 style="font-family:Fondamento">Mage</h2>
-                        <p>
-                            Mysterious and magical, Mages have long been staples of high fantasy.
-                            Mages use the <strong>Fireball</strong> special ability,
-                            causing mass destruction by forcing other characters to drink more.
-                        </p>
-                        <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/mage" role="button">Get the Mage character sheet</a></p>
+                        <div class="card text-center">
+                            <h2 style="font-family:Fondamento" class="card-header">Mage</h2>
+                            <div class="card-block">
+                                <p class="card-text">
+                                    Mysterious and magical, Mages have long been staples of high fantasy.
+                                    Mages use the <strong>Fireball</strong> special ability,
+                                    causing mass destruction by forcing other characters to drink more.
+                                </p>
+                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/mage" role="button">Get the Mage character sheet</a></p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <h2 style="font-family:Fondamento">Bard</h2>
-                        <p>
-                            Talented and charismastic, Bards are always the life of the party.
-                            Bards use the <strong>Bard's Song</strong> special ability,
-                            in which their magical singing is rewarded with extra levels.
-                        </p>
-                        <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/bard" role="button">Get the Bard character sheet</a></p>
+                        <div class="card text-center">
+                            <h2 style="font-family:Fondamento" class="card-header">Bard</h2>
+                            <div class="card-block">
+                                <p class="card-text">
+                                    Talented and charismastic, Bards are always the life of the party.
+                                    Bards use the <strong>Bard's Song</strong> special ability,
+                                    in which their magical singing is rewarded with extra levels.
+                                </p>
+                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/bard" role="button">Get the Bard character sheet</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <hr>
 
             </div> <!-- /container -->
 
         </main>
 
-        <footer class="container-fluid" style="color:lightgray">
-            <p>&copy; Brian Shef 2018-2019</p>
+        <footer class="footer">
+            <div class="container-fluid">
+                <span class="text-muted">&copy; Brian Shef 2018-2019</span>
+                <a class="text-right" href='https://ko-fi.com/Y8Y56BPH' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+            </div>
         </footer>
 
         <!-- Bootstrap core JavaScript

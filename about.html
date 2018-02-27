@@ -5,6 +5,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- Sticky Footer -->
+        <style>
+            body {
+              margin-bottom: 60px; /* Margin bottom by footer height */
+            }
+            .footer {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 60px; /* Set the fixed height of the footer here */
+              line-height: 60px; /* Vertically center the text there */
+              background-color: #f5f5f5;
+            }
+        </style>
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Fonts -->
@@ -146,8 +161,11 @@
 
         </div> <!-- /container -->
 
-        <footer class="container-fluid" style="color:lightgray">
-            <p>&copy; Brian Shef 2018-2019</p>
+        <footer class="footer">
+            <div class="container-fluid">
+                <span class="text-muted">&copy; Brian Shef 2018-2019</span>
+                <a class="text-right" href='https://ko-fi.com/Y8Y56BPH' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+            </div>
         </footer>
 
         <!-- Bootstrap core JavaScript
