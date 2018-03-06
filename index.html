@@ -44,8 +44,8 @@
                     </li>
                 </ul>
 
-                <span class="navbar-text">
-                    <span style="color:#343a40">&copy; <small>Brian Shef 2018</small></span>
+                <span class="navbar-text text-muted">
+                    <span>&copy; <small  style="font-family:Fondamento">Brian Shef 2018</small></span>
                     <a class="text-right" href='https://ko-fi.com/Y8Y56BPH' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi5.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
                 </span>
             </div>
@@ -58,12 +58,12 @@
                 <div class="row text-center">
                     <div class="col-sm-12">
                         <h1 class="display-2" style="font-family:UnifrakturMaguntia;color:#ffc107">PubQuest</h1>
-                        <h2 style="font-family:Fondamento;color:#343a40">A fun pub crawl drinking game inspired by classic, fantasy roleplaying games.</h2>
+                        <h2 class="text-secondary" style="font-family:Fondamento">A fun pub crawl drinking game inspired by classic, fantasy roleplaying games.</h2>
                     </div>
                 </div>
                 <div class="row" style="margin-top:60px">
                     <div class="col-md-6">
-                        <h1 style="font-family:Fondamento">Exploring the Dungeon</h1>
+                        <h2 style="font-family:Fondamento">Exploring the Dungeon</h2>
                         <p>
                             In PubQuest, bars and pubs are dungeons.
                             Exploring them is the heart and soul of the game.
@@ -85,7 +85,7 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <h1 style="font-family:Fondamento">Rules of the Realm</h1>
+                        <h2 style="font-family:Fondamento">Rules of the Realm</h2>
                         <p>
                             No matter where your adventure takes you,
                             heroes must always abide by the Rules of the Realm.
@@ -102,17 +102,11 @@
                 </div>
 
                 <!-- Characters -->
+
                 <div class="row">
                     <div class="col-md-12">
-
-                    </div>
-                </div>
-
-
-                <div class="row" style="text-align:center">
-                    <div class="col-md-12">
                         <hr >
-                        <h1 style="font-family:Fondamento">Choose your character</h1>
+                        <h2 style="font-family:Fondamento">Choose your character</h2>
                         <p>
                             Each kind of character has a unique special ability to aid in your quest.
                             Each character sheet clearly lists out everything you need to know in order to play.
@@ -120,89 +114,146 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <h2 style="font-family:Fondamento" class="card-header">Warrior</h2>
-                            <div class="card-block">
-                                <p class="card-text">
-                                    Mighty and courageous, no adventuring party is complete without a Warrior or two.
-                                    Warriors use the <strong>Power Attack</strong> special ability,
-                                    which allows them to gain levels rapidly.
-                                </p>
-                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/warrior" role="button">Get the Warrior character sheet</a></p>
+                    <div class="col-md-12">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="heading-warrior">
+                                    <div class="mb-0">
+                                        <img src="./assets/warrior.png"></img>
+                                        <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#warrior" aria-expanded="false" aria-controls="warrior">
+                                            <h2 style="font-family:Fondamento;color:#ffc107">Warrior</h2>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div id="warrior" class="collapse" aria-labelledby="heading-warrior" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Mighty and courageous, no adventuring party is complete without a Warrior or two.
+                                            Warriors use the <strong>Power Attack</strong> special ability,
+                                            which allows them to gain levels rapidly.
+                                        </p>
+                                        <p><a class="btn btn-warning" href="https://brianshef.github.io/pubquest/characters/warrior" role="button">Get the Warrior character sheet</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <h2 style="font-family:Fondamento" class="card-header">Thief</h2>
-                            <div class="card-block">
-                                <p class="card-text">
-                                    Swift, sneaky, and dextrous, the Thief is a vital but dangerous companion.
-                                    Thieves use the <strong>Backstab</strong> special ability,
-                                    allowing them to steal levels from other characters for themselves.
-                                </p>
-                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/thief" role="button">Get the Thief character sheet</a></p>
+
+                            <div class="card">
+                                <div class="card-header" id="heading-thief">
+                                    <div class="mb-0">
+                                        <img src="./assets/thief.png"></img>
+                                        <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#thief" aria-expanded="false" aria-controls="thief">
+                                            <h2 style="font-family:Fondamento;color:#ffc107">Thief</h2>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="thief" class="collapse" aria-labelledby="heading-thief" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Swift, sneaky, and dextrous, the Thief is a vital but dangerous companion.
+                                            Thieves use the <strong>Backstab</strong> special ability,
+                                            allowing them to steal levels from other characters for themselves.
+                                        </p>
+                                        <p><a class="btn btn-warning" href="https://brianshef.github.io/pubquest/characters/thief" role="button">Get the Thief character sheet</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <h2 style="font-family:Fondamento" class="card-header">Mage</h2>
-                            <div class="card-block">
-                                <p class="card-text">
-                                    Mysterious and magical, Mages have long been staples of high fantasy.
-                                    Mages use the <strong>Fireball</strong> special ability,
-                                    causing mass destruction by forcing other characters to drink more.
-                                </p>
-                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/mage" role="button">Get the Mage character sheet</a></p>
+
+                            <div class="card">
+                                <div class="card-header" id="heading-mage">
+                                    <div class="mb-0">
+                                        <img src="./assets/mage.png"></img>
+                                        <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#mage" aria-expanded="false" aria-controls="mage">
+                                            <h2 style="font-family:Fondamento;color:#ffc107">Mage</h2>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="mage" class="collapse" aria-labelledby="heading-mage" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Mysterious and magical, Mages have long been staples of high fantasy.
+                                            Mages use the <strong>Fireball</strong> special ability,
+                                            causing mass destruction by forcing other characters to drink more.
+                                        </p>
+                                        <p><a class="btn btn-warning" href="https://brianshef.github.io/pubquest/characters/mage" role="button">Get the Mage character sheet</a></p>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="card">
+                                <div class="card-header" id="heading-bard">
+                                    <div class="mb-0">
+                                        <img src="./assets/bard.png"></img>
+                                        <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#bard" aria-expanded="false" aria-controls="bard">
+                                            <h2 style="font-family:Fondamento;color:#ffc107">Bard</h2>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="bard" class="collapse" aria-labelledby="heading-bard" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Talented, charismastic, and full of stories,
+                                            Bards are always the life of the party.
+                                            Bards use the <strong>Bard's Song</strong> special ability,
+                                            in which their magical singing is rewarded with extra levels.
+                                        </p>
+                                        <p><a class="btn btn-warning" href="https://brianshef.github.io/pubquest/characters/bard" role="button">Get the Bard character sheet</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="heading-paladin">
+                                    <div class="mb-0">
+                                        <img src="./assets/paladin.png"></img>
+                                        <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#paladin" aria-expanded="false" aria-controls="paladin">
+                                            <h2 style="font-family:Fondamento;color:#ffc107">Paladin</h2>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="paladin" class="collapse" aria-labelledby="heading-paladin" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Chivalrous defenders of all that is good and just in the world,
+                                            Paladins are shining, holy crusaders. Paladins use the
+                                            <strong>Hand of Justice</strong> special abilitiy
+                                            to enforce their Code of Honor and punish evil with a vengeance.
+                                        </p>
+                                        <p><a class="btn btn-warning" href="https://brianshef.github.io/pubquest/characters/paladin" role="button">Get the Paladin character sheet</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="heading-warlock">
+                                    <div class="mb-0">
+                                        <img src="./assets/warlock.png"></img>
+                                        <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#warlock" aria-expanded="false" aria-controls="warlock">
+                                            <h2 style="font-family:Fondamento;color:#ffc107">Warlock</h2>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="warlock" class="collapse" aria-labelledby="heading-warlock" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Wielders of eldritch power, Warlocks
+                                            draw their magic from an otherwordly source. Warlocks use the
+                                            <strong>Fiendish Summoning</strong> special ability,
+                                            in which they summon an Outsider to sow chaos.
+                                        </p>
+                                        <p><a class="btn btn-warning" href="https://brianshef.github.io/pubquest/characters/warlock" role="button">Get the Warlock character sheet</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <h2 style="font-family:Fondamento" class="card-header">Bard</h2>
-                            <div class="card-block">
-                                <p class="card-text">
-                                    Talented, charismastic, and full of stories,
-                                    Bards are always the life of the party.
-                                    Bards use the <strong>Bard's Song</strong> special ability,
-                                    in which their magical singing is rewarded with extra levels.
-                                </p>
-                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/bard" role="button">Get the Bard character sheet</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <h2 style="font-family:Fondamento" class="card-header">Paladin</h2>
-                            <div class="card-block">
-                                <p class="card-text">
-                                    Chivalrous defenders of all that is good and just in the world,
-                                    Paladins are shining, holy crusaders. Paladins use the
-                                    <strong>Hand of Justice</strong> special abilitiy
-                                    to enforce their Code of Honor and punish evil with a vengeance.
-                                </p>
-                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/paladin" role="button">Get the Paladin character sheet</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <h2 style="font-family:Fondamento" class="card-header">Warlock</h2>
-                            <div class="card-block">
-                                <p class="card-text">
-                                    Wielders of eldritch power, Warlocks
-                                    draw their magic from an otherwordly source. Warlocks use the
-                                    <strong>Fiendish Summoning</strong> special ability,
-                                    in which they summon an Outsider to sow chaos.
-                                </p>
-                                <p><a class="btn btn-outline-warning" href="https://brianshef.github.io/pubquest/characters/warlock" role="button">Get the Warlock character sheet</a></p>
-                            </div>
-                        </div>
+                    <div class="col-md-12">
+                        <hr />
                     </div>
                 </div>
 
